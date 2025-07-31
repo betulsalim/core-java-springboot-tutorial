@@ -14,86 +14,106 @@ This repository is a practical learning guide for mastering **Core Java fundamen
 
 core-java-springboot-tutorial/
 │
-├── Variables/ # Covers basic data types and variable declarations
-├── BeginnerCalculator/ # A simple arithmetic calculator to understand logic and control flow
-├── OOPBankingProject/ # Object-oriented programming (OOP) with real-life simulation (Banking)
-├── StudentDirectory/ # A basic collection-driven CRUD-style student info manager (Basic for understanding List/Set)
+├── Variables/ # Java data types, variable declarations, naming rules
+├── BeginnerCalculator/ # A basic calculator using control structures
+├── OOPBankingProject/ # Real-life simulation using OOP concepts
+├── StudentDirectory/ # CRUD-like student manager using collections
+├── Accepting_Input_From_User/ # Taking user input via Scanner
+├── Implicit_TypeCasting/ # Automatic type conversions
+├── Explicit_TypeCasting/ # Manual type casting with precision notes
+├── Operators/ # Arithmetic, logical, and comparison operators
+├── Swap_Two_Variables_Using_Third_Variable/ # Swapping values using a temporary variable
 
 
 ---
 
-## 🧱 Core Concepts Covered
 
-Below are the key Java topics explained and practiced in this repository:
+---
 
-### 1. **What is Java For?**
-Java is a general-purpose, object-oriented programming language widely used for backend systems, desktop applications, Android development, and enterprise-level APIs. It offers platform independence via the Java Virtual Machine (JVM).
+## 🧱 Core Java Concepts Covered
 
-### 2. **What Are Reserved Words in Java?**
-Reserved words (or **keywords**) are predefined words in Java with special meaning and cannot be used as identifiers (e.g., `class`, `public`, `static`, `if`, `else`, `int`, `void`, etc.).
+### 🔹 1. What is Java?
+Java is a platform-independent, object-oriented programming language widely used for enterprise backend development, Android apps, and APIs.
 
+---
+
+### 🔹 2. Reserved Words in Java
+Keywords like `class`, `public`, `if`, `else`, etc. are reserved and cannot be used as variable or class names.  
 ➡️ See: `Variables/ReservedWordsExample.java`
 
-### 3. **What Are Identifiers in Java?**
-Identifiers are names given to classes, variables, methods, and objects.  
-Rules:
-- Must begin with a letter, `_`, or `$`
-- Cannot start with a digit
-- Cannot use Java reserved keywords
+---
 
+### 🔹 3. Identifiers
+Identifiers are names for variables, methods, classes. Must start with a letter, `_`, or `$` and cannot use reserved keywords.  
 ➡️ See: `Variables/IdentifiersDemo.java`
-
-### 4. **What Are Variables in Java?**
-Variables store data values. Java is a statically typed language, meaning each variable must be declared with a data type.
-
-➡️ See: `Variables/VariableDeclaration.java`
 
 ---
 
-## 🔢 Data Types in Java
+### 🔹 4. Variables and Data Types
+Understand how to declare variables and assign values with correct types.  
+➡️ See: `Variables/VariableDeclaration.java`
 
-### 5. **Understanding `byte`, `short`, `int`, `long`**
-
-| Type   | Size     | Range                          |
-|--------|----------|---------------------------------|
-| byte   | 8-bit    | -128 to 127                    |
-| short  | 16-bit   | -32,768 to 32,767              |
-| int    | 32-bit   | -2^31 to 2^31-1                |
-| long   | 64-bit   | -2^63 to 2^63-1                |
-
-📌 Use `byte`/`short` only when memory optimization is important.
+#### 🔸 Integer Types
+| Type  | Size    | Range                   |
+|-------|---------|--------------------------|
+| byte  | 8-bit   | -128 to 127              |
+| short | 16-bit  | -32,768 to 32,767        |
+| int   | 32-bit  | -2^31 to 2^31-1          |
+| long  | 64-bit  | -2^63 to 2^63-1          |
 
 ➡️ See: `Variables/UnderstandingByte_Short_Int_Long/`
 
-### 6. **Understanding `float`, `double`**
-
-- `float` (32-bit): Less precision, use for performance/memory
-- `double` (64-bit): Default for decimals, higher precision
-
+#### 🔸 Floating Point Types
+- `float`: 32-bit, less precision  
+- `double`: 64-bit, default for decimal numbers  
 ➡️ See: `Variables/FloatingPointTypesDemo.java`
 
-### 7. **Understanding `char`, `boolean`**
-
-- `char`: Stores a single character (Unicode)
-- `boolean`: Stores `true` or `false`, commonly used in conditions
-
+#### 🔸 char and boolean
+- `char`: Unicode character  
+- `boolean`: true or false  
 ➡️ See: `Variables/CharBooleanDemo.java`
 
 ---
 
-## 📌 When Should You Use `byte`, `short`, `int`?
+## 💡 New Additions
 
-- `int` is most commonly used for integers.
-- Use `byte` or `short` only when you are dealing with very large arrays (e.g., sensor data, embedded systems) and need memory optimization.
+### 📌 Accepting Input from User
+Learn how to use `Scanner` to read input from console for `int`, `double`, `String`, etc.  
+➡️ See: `Accepting_Input_From_User/InputDemo.java`
 
 ---
 
-## 💡 Projects to Reinforce Concepts
+### 📌 Implicit Type Casting
+Covers automatic data type conversion (e.g., int to double).  
+➡️ See: `Implicit_TypeCasting/ImplicitCastingExample.java`
 
-- **Beginner Calculator** – Helps understand operators, conditionals, method calls
-- **OOP Banking System** – Practice classes, objects, inheritance, encapsulation
-- **Student Directory** – Learn collections (`List`, `Map`) and data management logic
-- **Variables Folder** – Each Java primitive data type is explained with examples
+---
+
+### 📌 Explicit Type Casting
+Covers manual conversion using syntax like `(int)` or `(float)`, with warnings on data loss.  
+➡️ See: `Explicit_TypeCasting/ExplicitCastingExample.java`
+
+---
+
+### 📌 Operators in Java
+Includes arithmetic (`+`, `-`, `*`, `/`, `%`), relational (`==`, `!=`, `<`, `>`), and logical (`&&`, `||`, `!`) operators with examples.  
+➡️ See: `Operators/ArithmeticOperators.java`, etc.
+
+---
+
+### 📌 Swapping Two Variables Using a Third Variable
+Classic swap logic with step-by-step explanation.  
+➡️ See: `Swap_Two_Variables_Using_Third_Variable/SwapDemo.java`
+
+---
+
+## 🚧 Upcoming Content
+
+- ✅ Core Java fundamentals (in progress)
+- 🔜 Java Collections (List, Map, Set)
+- 🔜 Exception Handling and File I/O
+- 🔜 Spring Boot Setup + REST APIs
+- 🔜 Unit Testing and JSON serialization
 
 ---
 
@@ -102,23 +122,24 @@ Variables store data values. Java is a statically typed language, meaning each v
 - Java (JDK 17+ recommended)
 - IntelliJ IDEA
 - Maven (optional)
-- Spring Boot (in upcoming sections)
+- Spring Boot (coming soon)
 
 ---
 
-## 🚧 Upcoming Content
+## 🎓 Suggested Mini Projects
 
-✅ Core Java fundamentals  
-🔜 Spring Boot setup and REST API building  
-🔜 Java Collections, Exception Handling, File I/O  
-🔜 Testing and JSON handling with Spring
+- **Beginner Calculator** – Logic, operators, method calls  
+- **OOP Banking System** – Encapsulation, inheritance  
+- **Student Directory** – CRUD operations using `List`, `Map`  
+- **Input & Casting Examples** – Master variables and types
 
 ---
 
 ## 📬 Contact
 
-Maintained by [Betül Salim](https://github.com/betulsalim)  
-Feel free to fork or star the repo if you find it helpful.
+Maintained by **[Betül Salim](https://www.linkedin.com/in/betulsalim-/)**  
+Feel free to fork ⭐️ the repo if it helps your learning!  
+📌 GitHub: [github.com/betulsalim](https://github.com/betulsalim/core-java-springboot-tutorial)
 
 ---
 
